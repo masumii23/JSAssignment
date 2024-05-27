@@ -1,0 +1,34 @@
+const arr=[];
+function mintNFT(name ,skinColor,shirt,age,bling) {
+    const obj_nft = {
+        "Name" :name,
+        "Skin_color":skinColor,
+        "Shirt":shirt,
+        "Age":age,
+        "Bling":bling,
+    }
+    arr.push(obj_nft);
+    console.log("Name : "+name);
+}
+
+function listNFTs() {
+    for(let i=0;i<arr.length;i++){
+        console.log("\nNFt ID :"+(i+1));
+        console.log("Name-> "+arr[i].Name);
+        console.log("Skin_color-> "+arr[i].Skin_color);
+        console.log("Shirt-> "+arr[i].Shirt);
+        console.log("Age-> "+arr[i].Age);
+        console.log("Bling->"+arr[i].Bling);
+    }
+}
+
+function getTotalSupply() {
+    return arr.length;
+}
+
+mintNFT("Masumi","Black","Crop Top","21","Gold chain");
+mintNFT("Misthi","Sand","Skirt","20","Silver ring");
+mintNFT("Netri","Cream","Sweaters","18","Diamond ring");
+mintNFT("Reeva", "brown", "Middi", "19", "platinum ring");
+listNFTs();
+console.log("\nNumber of NFTs created is: "+getTotalSupply())
