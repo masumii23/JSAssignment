@@ -32,8 +32,8 @@ function listNFTs() {
     for(let i=0;i<arr.length;i++){
         console.log("\nNFt ID :"+(i+1));
         console.log("Name-> "+arr[i].Name);
-        console.log("Skin_Color-> "+arr[i].Skin_color);
-        console.log("Shirt_type-> "+arr[i].Shirt);
+        console.log("Skin_Color-> "+arr[i].Skin_Color);
+        console.log("Shirt_type-> "+arr[i].Shirt_type);
         console.log("Age-> "+arr[i].Age);
         console.log("Bling->"+arr[i].Bling);
     }
